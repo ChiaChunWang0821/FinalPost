@@ -1,0 +1,160 @@
+\documentclass[a0paper,portrait]{baposter}
+
+\usepackage{subfigure} 
+\usepackage{fontspec} %加這個就可以設定字體
+\usepackage{xeCJK} %讓中英文字體分開設置
+\setCJKmainfont{標楷體} %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
+\XeTeXlinebreaklocale "zh" %這兩行一定要加，中文才能自動換行
+\XeTeXlinebreakskip = 0pt plus 1pt %這兩行一定要加，中文才能自動換行
+
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{relsize} % Used for making text smaller in some places
+
+\graphicspath{{figures/}} % Directory in which figures are stored
+
+\definecolor{bordercol}{RGB}{40,40,40} % Border color of content boxes
+\definecolor{headercol1}{RGB}{186,215,230} % Background color for the header in the content boxes (left side)
+\definecolor{headercol2}{RGB}{80,80,80} % Background color for the header in the content boxes (right side)
+\definecolor{headerfontcol}{RGB}{0,0,0} % Text color for the header text in the content boxes
+\definecolor{boxcolor}{RGB}{186,215,230} % Background color for the content in the content boxes
+
+\begin{document}
+
+\background{ % Set the background to an image (background.pdf)
+\begin{tikzpicture}[remember picture,overlay]
+\draw (current page.north west)+(-2em,2em) node[anchor=north west]
+{\includegraphics[height=1.1\textheight]{background}};
+\end{tikzpicture}
+}
+
+\begin{poster}{
+grid=false,
+borderColor=bordercol, % Border color of content boxes
+headerColorOne=headercol1, % Background color for the header in the content boxes (left side)
+headerColorTwo=headercol2, % Background color for the header in the content boxes (right side)
+headerFontColor=headerfontcol, % Text color for the header text in the content boxes
+boxColorOne=boxcolor, % Background color for the content in the content boxes
+headershape=roundedright, % Specify the rounded corner in the content box headers
+headerfont=\Large\sf\bf, % Font modifiers for the text in the content box headers
+textborder=rectangle,
+background=user,
+headerborder=open, % Change to closed for a line under the content box headers
+boxshade=plain
+}
+{}
+%
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHOR NAME
+%----------------------------------------------------------------------------------------
+%
+{\sf\bf AndMuscle \\ \smaller \smaller 基於Android行動裝置與肌肉感測器之 \\ 網路連線即時對戰擴增實境遊戲} % Poster title
+%{\sf 基於Android行動裝置與肌肉感測器之網路連線即時對戰擴增實境遊戲}
+{\vspace{1em} 指導教授: 張欽圳\space 老師
+ \space \space 專題成員: 王佳君 \space 林令婕 % Author names
+}
+{\includegraphics[scale=1.0]{ntoulogo}} % University/lab logo
+
+%----------------------------------------------------------------------------------------
+%	簡介 INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\headerbox{簡介\space Introduction}
+{name=introduction,column=0,row=0}{
+
+本專題設計為一款雙人網路連線即時對戰的擴增實境遊戲，於 Android 行動裝置上開發，結合影像處理及肌肉感測器技術， 以之為主架構來設計。
+\\ 在這款遊戲中，利用肌肉感測器測量肌肉活動狀況，及不斷改變肌肉施力大小與頻率，來達成開發者要求。建立網路通道，即時傳輸感測器數據與雙方畫面，以現實中對方遊戲者臉部影像為基礎，改變其皮膚色調，且在指定位置拼貼上逗趣的圖示。
+}
+
+%----------------------------------------------------------------------------------------
+%	系統架構 System Architecture
+%----------------------------------------------------------------------------------------
+
+\headerbox{系統架構\space System Architecture}{name=architecture,column=0,below=introduction}{
+\includegraphics[scale=0.55]{軟硬體架構圖.JPG}
+}
+
+%----------------------------------------------------------------------------------------
+%	技術說明 Technical Description
+%----------------------------------------------------------------------------------------
+
+\headerbox{系技術說明\space Technical Description}{name=technical,column=0,below=architecture}{
+
+\begin{description}
+\item[A] 網路連線協定圖
+\includegraphics[scale=0.3]{tcp01.JPG}
+\includegraphics[scale=0.3]{tcp02.JPG}
+\includegraphics[scale=0.3]{tcp03.JPG}
+
+\item[B] 臉部偵測
+\\ blablabla
+\item[C] 肌肉感測器數據分析
+\\ blablabla
+\end{description}
+}
+
+%----------------------------------------------------------------------------------------
+%	實驗結果 Experiment Result
+%----------------------------------------------------------------------------------------
+
+\headerbox{實驗結果\space Experiment Result}{name=experiment,column=1,row=0}{
+
+\begin{description}
+\item[A] 遊戲主畫面
+\\ blablabla
+\item[B] 遊戲中畫面
+\\ blablabla
+\item[C] 遊戲結束畫面
+\\ blablabla
+\end{description}
+}
+
+%----------------------------------------------------------------------------------------
+%	結論 Conclusion
+%----------------------------------------------------------------------------------------
+
+\headerbox{結論\space Conclusion}
+{name=conclusion,column=1,below=experiment}{
+
+結論
+
+\begin{enumerate}
+\item 第一點
+\item 第二點
+\end{enumerate}
+}
+
+%----------------------------------------------------------------------------------------
+%	討論 Discussion
+%----------------------------------------------------------------------------------------
+
+\headerbox{討論\space Discussion}{name=discussion,column=1,below=conclusion}{
+
+討論
+
+\begin{enumerate}
+\item 第一點
+\item 第二點
+\end{enumerate}
+}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\headerbox{References}
+{name=references,column=1,below=discussion}{
+
+\smaller % Reduce the font size in this block
+\renewcommand{\section}[2]{\vskip 0.05em} % Get rid of the default "References" section title
+\nocite{*} % Insert publications even if they are not cited in the poster
+
+\bibliographystyle{unsrt}
+\bibliography{sample} % Use sample.bib as the bibliography file
+}
+
+%----------------------------------------------------------------------------------------
+
+\end{poster}
+
+\end{document}
