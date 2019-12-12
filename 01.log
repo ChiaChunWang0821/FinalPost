@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.5.11)  12 DEC 2019 22:03
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.5.11)  12 DEC 2019 22:36
 entering extended mode
 **./01.tex
 (01.tex
@@ -1108,7 +1108,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  28261 strings out of 427748
  627987 string characters out of 3147200
- 721802 words of memory out of 3000000
+ 721842 words of memory out of 3000000
  31971 multiletter control sequences out of 15000+200000
  535488 words of font info for 45 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
