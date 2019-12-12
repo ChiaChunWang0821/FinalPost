@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.5.11)  11 DEC 2019 13:02
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.5.11)  12 DEC 2019 22:03
 entering extended mode
 **./01.tex
 (01.tex
@@ -1057,12 +1057,12 @@ Package xeCJK Warning: Unknown CJK family `\CJKsfdefault' is being ignored.
 
 
 LaTeX Font Warning: Font shape `TU/標楷體(0)/bx/n' undefined
-(Font)              using `TU/標楷體(0)/m/n' instead on input line 56.
+(Font)              using `TU/標楷體(0)/m/n' instead on input line 57.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 56.
+(Font)              <7> on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 56.
+(Font)              <5> on input line 57.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -1077,11 +1077,6 @@ File: figures/tcp02.JPG Graphic file (type bmp)
 <figures/tcp02.JPG>
 File: figures/tcp03.JPG Graphic file (type bmp)
 <figures/tcp03.JPG>
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-[]\TU/標楷體(0)/m/n/10 網 路 連 線 協 定 圖 []
- []
-
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -1099,7 +1094,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (2.22pt too wide) in paragraph at lines 56--158
+Overfull \hbox (2.22pt too wide) in paragraph at lines 57--169
 [][]  [] 
  []
 
@@ -1111,10 +1106,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 28239 strings out of 427748
- 626781 string characters out of 3147200
- 716298 words of memory out of 3000000
- 31949 multiletter control sequences out of 15000+200000
+ 28261 strings out of 427748
+ 627987 string characters out of 3147200
+ 721802 words of memory out of 3000000
+ 31971 multiletter control sequences out of 15000+200000
  535488 words of font info for 45 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,8n,92p,417b,1012s stack positions out of 5000i,500n,10000p,200000b,50000s
