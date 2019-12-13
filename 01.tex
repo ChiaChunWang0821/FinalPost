@@ -11,6 +11,7 @@
 \usepackage{booktabs} % Horizontal rules in tables
 \usepackage{relsize} % Used for making text smaller in some places
 \usepackage{tikz}
+\usepackage{lipsum}
 
 \graphicspath{{figures/}} % Directory in which figures are stored
 
@@ -19,6 +20,17 @@
 \definecolor{headercol2}{RGB}{80,80,80} % Background color for the header in the content boxes (right side)
 \definecolor{headerfontcol}{RGB}{0,0,0} % Text color for the header text in the content boxes
 \definecolor{boxcolor}{RGB}{186,215,230} % Background color for the content in the content boxes
+
+%----------------------------------------------------------------------------------------
+%	FOOTER TEXT
+%----------------------------------------------------------------------------------------
+
+%\newcommand{\centerfoot}{john@smith.com} % Center footer text
+
+\newcommand{\leftfoot}{http://www.LaTeXTemplates.com} % Left footer text
+
+\newcommand{\rightfoot}{john@smith.com} % Right footer text
+%----------------------------------------------------------------------------------------
 
 \begin{document}
 
@@ -56,6 +68,7 @@ boxshade=plain
  \space \space 專題成員: 王佳君 \space 林令婕 % Author names
 }
 {\includegraphics[scale=1.0]{ntoulogo}} % University/lab logo
+
 
 %----------------------------------------------------------------------------------------
 %	簡介 INTRODUCTION
@@ -134,7 +147,7 @@ boxshade=plain
 \space \space
 \includegraphics[scale=0.15]{game04.png}
 \item 遊戲中畫面 \\ \\
-\includegraphics[scale=0.15]{game03.png}
+\includegraphics[scale=0.2]{game03.png}
 %\item 遊戲結束畫面 \\ \\
 %\includegraphics[scale=0.15]{game04.png}
 \end{itemize}
@@ -159,7 +172,7 @@ boxshade=plain
 %	討論 Discussion
 %----------------------------------------------------------------------------------------
 
-\headerbox{結論與討論\space Conclusion and Discussion}{name=discussion,column=1,below=experiment}{
+\headerbox{討論 \space Discussion}{name=discussion,column=1,below=experiment}{
 
 \begin{itemize}
 \item 臉部特徵點位置取得上，會因人物的動作而識別出現誤差。
@@ -167,8 +180,6 @@ boxshade=plain
 \item 肌肉感測器貼片若未貼到較佳的位置，所測得的數據效果會不如預期。
 \end{itemize}
 }
-
-%----------------------------------------------------------------------------------------
 
 \end{poster}
 
