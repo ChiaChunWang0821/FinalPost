@@ -110,43 +110,43 @@ boxshade=plain
 
 \headerbox{實驗結果\space Experiment Result}{name=experiment,column=1,row=0}{
 
-\begin{description}
-\item[A] 遊戲主畫面
+\begin{itemize}
+\item 遊戲主頁面及開始畫面(連線上Server) \\ \\
+\includegraphics[scale=0.25]{game01.png} 
+\space \space
+\includegraphics[scale=0.25]{game02.png}
+\item 遊戲中畫面 \\ \\
+\includegraphics[scale=0.25]{game03.png}
+\item 遊戲結束畫面
 \\ blablabla
-\item[B] 遊戲中畫面
-\\ blablabla
-\item[C] 遊戲結束畫面
-\\ blablabla
-\end{description}
+\end{itemize}
 }
 
 %----------------------------------------------------------------------------------------
 %	結論 Conclusion
 %----------------------------------------------------------------------------------------
 
-\headerbox{結論\space Conclusion}
-{name=conclusion,column=1,below=experiment}{
+%\headerbox{結論\space Conclusion}
+%{name=conclusion,column=1,below=experiment}{
 
-結論
+%結論
 
-\begin{enumerate}
-\item 第一點
-\item 第二點
-\end{enumerate}
-}
+%\begin{enumerate}
+%\item 第一點
+%\item 第二點
+%\end{enumerate}
+%}
 
 %----------------------------------------------------------------------------------------
 %	討論 Discussion
 %----------------------------------------------------------------------------------------
 
-\headerbox{討論\space Discussion}{name=discussion,column=1,below=conclusion}{
+\headerbox{討論\space Discussion}{name=discussion,column=1,below=experiment}{
 
-討論
-
-\begin{enumerate}
-\item 第一點
-\item 第二點
-\end{enumerate}
+\begin{itemize}
+\item 臉部特徵點位置取得上，會因人物的動作而識別出現誤差。
+\item 網路傳送影像大小後，為避免此數據與影像數據混淆，會先暫停0.1秒，造成接收效率降低。
+\end{itemize}
 }
 
 %----------------------------------------------------------------------------------------

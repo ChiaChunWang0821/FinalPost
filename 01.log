@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.5.11)  13 DEC 2019 08:17
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.5.11)  13 DEC 2019 09:01
 entering extended mode
 **./01.tex
 (01.tex
@@ -1078,9 +1078,22 @@ File: figures/Muscle.JPG Graphic file (type bmp)
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
+File: figures/game01.png Graphic file (type bmp)
+<figures/game01.png>
+File: figures/game02.png Graphic file (type bmp)
+<figures/game02.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+
+ []
+
+File: figures/game03.png Graphic file (type bmp)
+<figures/game03.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+
+ []
+
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -1100,10 +1113,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 28169 strings out of 427748
- 625646 string characters out of 3147200
- 717104 words of memory out of 3000000
- 31883 multiletter control sequences out of 15000+200000
+ 28097 strings out of 427748
+ 623689 string characters out of 3147200
+ 713831 words of memory out of 3000000
+ 31808 multiletter control sequences out of 15000+200000
  535480 words of font info for 44 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,8n,92p,417b,1012s stack positions out of 5000i,500n,10000p,200000b,50000s
