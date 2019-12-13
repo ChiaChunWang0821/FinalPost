@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.5.11)  13 DEC 2019 23:55
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7000 64-bit) (preloaded format=xelatex 2019.5.11)  14 DEC 2019 00:14
 entering extended mode
 **./01.tex
 (01.tex
@@ -1073,8 +1073,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-File: figures/軟硬體架構圖.JPG Graphic file (type bmp)
-<figures/軟硬體架構圖.JPG>
+File: figures/軟硬體架構圖-2.JPG Graphic file (type bmp)
+<figures/軟硬體架構圖-2.JPG>
 File: figures/system.jpg Graphic file (type bmp)
 <figures/system.jpg>
 Missing character: There is no ; in font nullfont!
@@ -1130,8 +1130,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  28350 strings out of 427748
- 630469 string characters out of 3147200
- 886969 words of memory out of 3000000
+ 630477 string characters out of 3147200
+ 886967 words of memory out of 3000000
  32052 multiletter control sequences out of 15000+200000
  535480 words of font info for 44 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
