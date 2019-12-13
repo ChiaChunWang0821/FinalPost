@@ -93,14 +93,6 @@ boxshade=plain
 \includegraphics[scale=0.45]{Client.JPG}
 \end{description}
 
-\item 臉部偵測
-\begin{description}
-\item[1] 運用Google Firebase ML Kit 提供之API進行面部特徵點的取得。
-\item[2] 在Detector運行前進行Options的設定及欲偵測之檔案型態轉換。
-\item[3] 塗鴉後將所塗鴉過之區域進行紀錄，以保存資料。\\
-\includegraphics[scale=0.4]{face.JPG}
-\end{description}
-
 \end{itemize}
 }
 
@@ -110,6 +102,14 @@ boxshade=plain
 
 \headerbox{技術說明\space Technical Description}{name=technical02,column=1,row=0}{
 \begin{itemize}
+\item 臉部偵測
+\begin{description}
+\item[1] 運用Google Firebase ML Kit 提供之API進行面部特徵點的取得。
+\item[2] 在Detector運行前進行Options的設定及欲偵測之檔案型態轉換。
+\item[3] 塗鴉後將所塗鴉過之區域進行紀錄，以保存資料。\\
+\includegraphics[scale=0.4]{face.JPG}
+\end{description}
+
 \item 肌肉感測器數據分析
 \begin{description}
 \item[1] 使用快速傅立葉分析進行數據轉換分析
@@ -127,14 +127,16 @@ boxshade=plain
 \headerbox{實驗結果\space Experiment Result}{name=experiment,column=1,below=technical02}{
 
 \begin{itemize}
-\item 遊戲主頁面及開始畫面(連線上Server) \\ \\
-\includegraphics[scale=0.2]{game01.png} 
+\item 遊戲主頁面及開始、結束畫面 \\ \\
+\includegraphics[scale=0.15]{game01.png} 
 \space \space
-\includegraphics[scale=0.2]{game02.png}
+\includegraphics[scale=0.15]{game02.png}
+\space \space
+\includegraphics[scale=0.15]{game04.png}
 \item 遊戲中畫面 \\ \\
-\includegraphics[scale=0.2]{game03.png}
-\item 遊戲結束畫面 \\ \\
-\includegraphics[scale=0.2]{game04.png}
+\includegraphics[scale=0.15]{game03.png}
+%\item 遊戲結束畫面 \\ \\
+%\includegraphics[scale=0.15]{game04.png}
 \end{itemize}
 }
 
@@ -157,11 +159,12 @@ boxshade=plain
 %	討論 Discussion
 %----------------------------------------------------------------------------------------
 
-\headerbox{討論\space Discussion}{name=discussion,column=1,below=experiment}{
+\headerbox{結論與討論\space Conclusion and Discussion}{name=discussion,column=1,below=experiment}{
 
 \begin{itemize}
 \item 臉部特徵點位置取得上，會因人物的動作而識別出現誤差。
 \item 網路傳送影像大小後，為避免此數據與影像數據混淆，會先暫停0.1秒，造成接收效率降低。
+\item 肌肉感測器貼片若未貼到較佳的位置，所測得的數據效果會不如預期。
 \end{itemize}
 }
 
