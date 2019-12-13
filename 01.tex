@@ -87,15 +87,19 @@ boxshade=plain
 \item 網路連線
 \begin{description}
 \item[1] 基於TCP網路架構，建構出伺服器(Server)端及玩家(Client)端。
-\item[2] 透過socket連線後，使用inputstream、outputstream於網路通道上進行輸入及輸出，並以lock、unlock、await、signal處理同步問題。
-\item[3] 連線協定圖 \\
-\includegraphics[scale=0.5]{TCP.JPG}
+\item[2] 透過socket連線後，使用不同Thread分別執行inputstream與outputstream，於網路通道上進行輸入及輸出，且以lock、unlock、await、signal處理同步問題。
+\item[3] Client端連線架構圖 \\
+\includegraphics[scale=0.45]{Client.JPG}
 \end{description}
 
 \item 臉部偵測
 \\ blablabla
 \item 肌肉感測器數據分析
-\\ blablabla
+\begin{description}
+\item[1] 使用快速傅立葉分析進行數據轉換分析
+\item[2] 數據分析架構圖 \\
+\includegraphics[scale=0.55]{Muscle.JPG}
+\end{description}
 
 \end{itemize}
 }
