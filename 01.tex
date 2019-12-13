@@ -10,6 +10,7 @@
 \usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
 \usepackage{booktabs} % Horizontal rules in tables
 \usepackage{relsize} % Used for making text smaller in some places
+\usepackage{tikz}
 
 \graphicspath{{figures/}} % Directory in which figures are stored
 
@@ -79,10 +80,10 @@ boxshade=plain
 }
 
 %----------------------------------------------------------------------------------------
-%	技術說明 Technical Description
+%	技術說明(一) Technical Description I
 %----------------------------------------------------------------------------------------
 
-\headerbox{技術說明\space Technical Description}{name=technical,column=0,below=architecture}{
+\headerbox{技術說明\space Technical Description}{name=technical01,column=0,below=architecture}{
 \begin{itemize}
 \item 網路連線
 \begin{description}
@@ -93,7 +94,22 @@ boxshade=plain
 \end{description}
 
 \item 臉部偵測
-\\ blablabla
+\begin{description}
+\item[1] 運用Google Firebase ML Kit 提供之API進行面部特徵點的取得。
+\item[2] 在Detector運行前進行Options的設定及欲偵測之檔案型態轉換。
+\item[3] 塗鴉後將所塗鴉過之區域進行紀錄，以保存資料。\\
+\includegraphics[scale=0.4]{face.JPG}
+\end{description}
+
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	技術說明(二) Technical Description II
+%----------------------------------------------------------------------------------------
+
+\headerbox{技術說明\space Technical Description}{name=technical02,column=1,row=0}{
+\begin{itemize}
 \item 肌肉感測器數據分析
 \begin{description}
 \item[1] 使用快速傅立葉分析進行數據轉換分析
@@ -108,7 +124,7 @@ boxshade=plain
 %	實驗結果 Experiment Result
 %----------------------------------------------------------------------------------------
 
-\headerbox{實驗結果\space Experiment Result}{name=experiment,column=1,row=0}{
+\headerbox{實驗結果\space Experiment Result}{name=experiment,column=1,below=technical02}{
 
 \begin{itemize}
 \item 遊戲主頁面及開始畫面(連線上Server) \\ \\
