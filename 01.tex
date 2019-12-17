@@ -118,9 +118,9 @@ boxshade=plain
 \begin{itemize}
 \item 臉部偵測
 \begin{description}
-\item[1] 運用Google Firebase ML Kit 提供之API進行面部特徵點的取得。
-\item[2] 在Detector運行前進行Options的設定及欲偵測之檔案型態轉換。
-\item[3] 塗鴉後將所塗鴉過之區域進行紀錄，以保存資料。\\
+\item[1] 運用Google Firebase ML Kit 提供之API進行面部特徵點的取得，以辨認五官的位置進行臉部塗鴉。
+\item[2] 在Detector運行前進行Options的設定，使偵測器更符合實際操作所要求之條件。以及將欲偵測之檔案轉換為偵測器所需之型態。
+\item[3] 塗鴉後將所塗鴉過之區域進行紀錄，保存其資料。\\
 \includegraphics[scale=0.4]{face.JPG}
 \end{description}
 
@@ -176,7 +176,7 @@ boxshade=plain
 \headerbox{討論 \space Discussion}{name=discussion,column=1,below=experiment}{
 
 \begin{itemize}
-\item 臉部特徵點位置取得上，會因人物的動作而識別出現誤差。
+\item 臉部特徵點位置取得上，會因人物的轉向的角度過大而識別出現誤差。
 \item 網路傳送影像大小後，為避免此數據與影像數據混淆，會先暫停0.1秒，造成接收效率降低。
 \item 肌肉感測器貼片若未貼到較佳的位置，所測得的數據效果會不如預期。
 \end{itemize}
